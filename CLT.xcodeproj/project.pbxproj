@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83505462653A758005013B5 /* TestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83505452653A758005013B5 /* TestCases.swift */; };
+		F83505482653AB2D005013B5 /* Prompter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83505472653AB2D005013B5 /* Prompter.swift */; };
+		F835054A2653B1CC005013B5 /* CLIInputSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83505492653B1CC005013B5 /* CLIInputSession.swift */; };
+		F835054E2653B209005013B5 /* TestInputSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835054D2653B209005013B5 /* TestInputSession.swift */; };
+		F835058526542D65005013B5 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835058426542D65005013B5 /* Parser.swift */; };
+		F835058D26542FE5005013B5 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835058C26542FE5005013B5 /* ParserTests.swift */; };
+		F8350593265430EB005013B5 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F21B3C2652EE53008284A1 /* Processor.swift */; };
+		F83505942654315C005013B5 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835058426542D65005013B5 /* Parser.swift */; };
+		F8350596265438FD005013B5 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8350595265438FD005013B5 /* Command.swift */; };
+		F8350597265438FD005013B5 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8350595265438FD005013B5 /* Command.swift */; };
 		F8F21B362652E8FC008284A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F21B352652E8FC008284A1 /* main.swift */; };
+		F8F21B3D2652EE53008284A1 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F21B3C2652EE53008284A1 /* Processor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +34,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F83505442653A6B3005013B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F83505452653A758005013B5 /* TestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCases.swift; sourceTree = "<group>"; };
+		F83505472653AB2D005013B5 /* Prompter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompter.swift; sourceTree = "<group>"; };
+		F83505492653B1CC005013B5 /* CLIInputSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIInputSession.swift; sourceTree = "<group>"; };
+		F835054D2653B209005013B5 /* TestInputSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInputSession.swift; sourceTree = "<group>"; };
+		F835058426542D65005013B5 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		F835058A26542FE5005013B5 /* CLTUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLTUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F835058C26542FE5005013B5 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		F835058E26542FE5005013B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8350595265438FD005013B5 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		F8F21B322652E8FC008284A1 /* CLT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLT; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F21B352652E8FC008284A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F8F21B3C2652EE53008284A1 /* Processor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F835058726542FE5005013B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8F21B2F2652E8FC008284A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +67,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F835054B2653B1EC005013B5 /* NaiveTesting */ = {
+			isa = PBXGroup;
+			children = (
+				F83505452653A758005013B5 /* TestCases.swift */,
+				F835054D2653B209005013B5 /* TestInputSession.swift */,
+			);
+			path = NaiveTesting;
+			sourceTree = "<group>";
+		};
+		F835054F2653B241005013B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F83505472653AB2D005013B5 /* Prompter.swift */,
+				F835058426542D65005013B5 /* Parser.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F835058B26542FE5005013B5 /* CLTUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F835058C26542FE5005013B5 /* ParserTests.swift */,
+				F835058E26542FE5005013B5 /* Info.plist */,
+			);
+			path = CLTUnitTests;
+			sourceTree = "<group>";
+		};
 		F8F21B292652E8FC008284A1 = {
 			isa = PBXGroup;
 			children = (
 				F8F21B342652E8FC008284A1 /* CLT */,
+				F835058B26542FE5005013B5 /* CLTUnitTests */,
 				F8F21B332652E8FC008284A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F21B322652E8FC008284A1 /* CLT */,
+				F835058A26542FE5005013B5 /* CLTUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				F8F21B352652E8FC008284A1 /* main.swift */,
+				F83505492653B1CC005013B5 /* CLIInputSession.swift */,
+				F8350595265438FD005013B5 /* Command.swift */,
+				F8F21B3C2652EE53008284A1 /* Processor.swift */,
+				F83505442653A6B3005013B5 /* README.md */,
+				F835054F2653B241005013B5 /* Utils */,
+				F835054B2653B1EC005013B5 /* NaiveTesting */,
 			);
 			path = CLT;
 			sourceTree = "<group>";
@@ -65,6 +129,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F835058926542FE5005013B5 /* CLTUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F835058F26542FE5005013B5 /* Build configuration list for PBXNativeTarget "CLTUnitTests" */;
+			buildPhases = (
+				F835058626542FE5005013B5 /* Sources */,
+				F835058726542FE5005013B5 /* Frameworks */,
+				F835058826542FE5005013B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLTUnitTests;
+			productName = CLTUnitTests;
+			productReference = F835058A26542FE5005013B5 /* CLTUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F8F21B312652E8FC008284A1 /* CLT */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F21B392652E8FC008284A1 /* Build configuration list for PBXNativeTarget "CLT" */;
@@ -91,6 +172,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F835058926542FE5005013B5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					F8F21B312652E8FC008284A1 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -110,22 +194,87 @@
 			projectRoot = "";
 			targets = (
 				F8F21B312652E8FC008284A1 /* CLT */,
+				F835058926542FE5005013B5 /* CLTUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F835058826542FE5005013B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F835058626542FE5005013B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8350593265430EB005013B5 /* Processor.swift in Sources */,
+				F835058D26542FE5005013B5 /* ParserTests.swift in Sources */,
+				F83505942654315C005013B5 /* Parser.swift in Sources */,
+				F8350597265438FD005013B5 /* Command.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8F21B2E2652E8FC008284A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F21B3D2652EE53008284A1 /* Processor.swift in Sources */,
+				F835054E2653B209005013B5 /* TestInputSession.swift in Sources */,
 				F8F21B362652E8FC008284A1 /* main.swift in Sources */,
+				F835054A2653B1CC005013B5 /* CLIInputSession.swift in Sources */,
+				F83505482653AB2D005013B5 /* Prompter.swift in Sources */,
+				F83505462653A758005013B5 /* TestCases.swift in Sources */,
+				F835058526542D65005013B5 /* Parser.swift in Sources */,
+				F8350596265438FD005013B5 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F835059026542FE5005013B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
+				INFOPLIST_FILE = CLTUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.CLTUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F835059126542FE5005013B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
+				INFOPLIST_FILE = CLTUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.CLTUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F8F21B372652E8FC008284A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +415,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F835058F26542FE5005013B5 /* Build configuration list for PBXNativeTarget "CLTUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F835059026542FE5005013B5 /* Debug */,
+				F835059126542FE5005013B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8F21B2D2652E8FC008284A1 /* Build configuration list for PBXProject "CLT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

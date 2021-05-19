@@ -1,0 +1,6 @@
+DerivedData
+Index
+Logs
+*.log
+.DS_Store
+xcuserdata
