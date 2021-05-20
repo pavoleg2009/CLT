@@ -27,7 +27,7 @@ final class Processor {
 
     /// Метод получает введенную пользователем строку и выозвращает то, что надо вывести в ответ
     /// - Parameter commandString: Строка, введенная пользователем ("сырая" комадна)
-    /// - Returns: <#description#>
+    /// - Returns: Вывод в результате выполнения операции (найденное значение или сообщение об ошибке или ничего)
     func process(_ commandString: String) -> String? {
 
         let command = parser.parse(commandString)
@@ -58,6 +58,7 @@ final class Processor {
 private extension Processor {
 
     func beginTransaction() -> String? {
+        // перед началом тразнакции сохраняем текущее состояние стек
         transactions.append(storage)
         return nil
     }
@@ -66,6 +67,7 @@ private extension Processor {
         guard !transactions.isEmpty else {
             return .noTransaction
         }
+        // при сохранении транзакции избавляемся от сохраненного - оно больше не нужно
         transactions.removeLast()
         return nil
     }
@@ -74,6 +76,7 @@ private extension Processor {
         guard let previousStorageState = transactions.popLast() else {
             return .noTransaction
         }
+        // при отмене транзакции берем со стека последнее сохраненное состояние
         storage = previousStorageState
         return nil
     }

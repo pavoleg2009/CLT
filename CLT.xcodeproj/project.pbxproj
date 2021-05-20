@@ -34,7 +34,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F83505442653A6B3005013B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F83505452653A758005013B5 /* TestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCases.swift; sourceTree = "<group>"; };
 		F83505472653AB2D005013B5 /* Prompter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompter.swift; sourceTree = "<group>"; };
 		F83505492653B1CC005013B5 /* CLIInputSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIInputSession.swift; sourceTree = "<group>"; };
@@ -94,6 +93,14 @@
 			path = CLTUnitTests;
 			sourceTree = "<group>";
 		};
+		F835059826551BE7005013B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8350595265438FD005013B5 /* Command.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F8F21B292652E8FC008284A1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				F8F21B352652E8FC008284A1 /* main.swift */,
+				F835059826551BE7005013B5 /* Model */,
 				F83505492653B1CC005013B5 /* CLIInputSession.swift */,
-				F8350595265438FD005013B5 /* Command.swift */,
 				F8F21B3C2652EE53008284A1 /* Processor.swift */,
-				F83505442653A6B3005013B5 /* README.md */,
 				F835054F2653B241005013B5 /* Utils */,
 				F835054B2653B1EC005013B5 /* NaiveTesting */,
 			);
